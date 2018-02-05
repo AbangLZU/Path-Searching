@@ -62,3 +62,7 @@ def optimum_policy(grid,goal,cost):
                                 policy[x][y] = delta_name[a]
 
     return policy
+
+policy = optimum_policy(grid, goal, cost)
+for line in policy:
+    print(line)
